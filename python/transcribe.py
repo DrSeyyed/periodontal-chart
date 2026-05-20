@@ -113,8 +113,7 @@ def transcribe_wav(wav_path):
         "هژده",
         "هیژده",
         "نوزده",
-        "بیست",
-        "[unk]"
+        "بیست"
     ], ensure_ascii=False)
 
     with wave.open(wav_path, "rb") as wf:
