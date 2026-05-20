@@ -23,7 +23,7 @@ RUN /app/.venv/bin/pip install vosk imageio-ffmpeg
 RUN rm -rf /app/python/models && \
     mkdir -p /app/python/models && \
     wget -O /tmp/vosk-model-fa-0.42.zip https://alphacephei.com/vosk/models/vosk-model-fa-0.42.zip && \
-    unzip /tmp/vosk-model-fa-0.42.zip -d /app/python/models && \
+    unzip /tmp/vosk-model-fa-0.42.zip -d /app/python/model && \
     rm /tmp/vosk-model-fa-0.42.zip
 
 RUN npm run build
