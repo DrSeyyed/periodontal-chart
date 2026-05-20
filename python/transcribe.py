@@ -13,6 +13,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "model", "vosk-model-fa-0.42")
 
 PERSIAN_NUMBER_MAP = {
     "صفر": 0,
+    "سفر": 0,
     "یک": 1,
     "يه": 1,
     "دو": 2,
@@ -81,6 +82,7 @@ def transcribe_wav(wav_path):
 
     grammar = json.dumps([
         "صفر",
+        "سفر",
         "یک",
         "يه",
         "دو",
