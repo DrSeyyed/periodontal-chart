@@ -9,8 +9,6 @@ node_modules
 /build
 uploads/*
 .venv
-python
-
 
 # OS
 .DS_Store
