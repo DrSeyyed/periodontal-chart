@@ -8,7 +8,7 @@ from vosk import Model, KaldiRecognizer
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model", "vosk-model-small-fa-0.5")
+MODEL_PATH = os.path.join(BASE_DIR, "model", "vosk-model-fa-0.42")
 
 
 PERSIAN_NUMBER_MAP = {
