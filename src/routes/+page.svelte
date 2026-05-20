@@ -164,7 +164,7 @@
 
         if (typeof value === "number") {
           const x = toothIndex * 90 + siteIndex * 30 + 15;
-          const y = 120 - Number(value) * 12;
+          const y = 120 - Number(value) * 6;
           points.push(`${x},${y}`);
         }
       }
@@ -299,12 +299,12 @@
 
             <div class="graph-box">
               <svg width="1440" height="130" viewBox="0 0 1440 130">
-                {#each Array.from({ length: 7 }, (_, i) => i + 1) as level}
+                {#each Array.from({ length: 20 }, (_, i) => i + 1) as level}
                   <line
                     x1="0"
                     x2="1440"
-                    y1={120 - level * 12}
-                    y2={120 - level * 12}
+                    y1={120 - level * 6}
+                    y2={120 - level * 6}
                     class="grid-line"
                   />
                 {/each}
@@ -332,7 +332,7 @@
                     {#if typeof(value) === "number"}
                       <circle
                         cx={toothIndex * 90 + siteIndex * 30 + 15}
-                        cy={120 - Number(value) * 12}
+                        cy={120 - Number(value) * 6}
                         r="4"
                         class="probing-dot"
                       />
@@ -371,12 +371,12 @@
 
             <div class="graph-box">
               <svg width="1440" height="130" viewBox="0 0 1440 130">
-                {#each Array.from({ length: 7 }, (_, i) => i + 1) as level}
+                {#each Array.from({ length: 20 }, (_, i) => i + 1) as level}
                   <line
                     x1="0"
                     x2="1440"
-                    y1={120 - level * 12}
-                    y2={120 - level * 12}
+                    y1={120 - level * 6}
+                    y2={120 - level * 6}
                     class="grid-line"
                   />
                 {/each}
@@ -404,7 +404,7 @@
                     {#if typeof(value) === "number"}
                       <circle
                         cx={toothIndex * 90 + siteIndex * 30 + 15}
-                        cy={120 - Number(value) * 12}
+                        cy={120 - Number(value) * 6}
                         r="4"
                         class="probing-dot"
                       />
